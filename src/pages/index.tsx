@@ -3,21 +3,17 @@ import Head from 'next/head';
 import Layout from '../components/Layout';
 import ResumeSection from '../components/ResumeSection';
 import '../styles/globals.css';
+// import Card from '@/components/Card';
+import Hero from '@/components/Hero';
 
 const Home: NextPage = () => {
   return (
-    <>
-      <Head>
-        <title>My Portfolio</title>
-        <meta name="description" content="Personal Portfolio Website" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Hero />
 
-      <Layout>
-        <ResumeSection />
-        {/* 他のセクションをここに追加 */}
-      </Layout>
-    </>
+      // {/* <Layout>
+      //   <ResumeSection />
+      //   {/* 他のセクションをここに追加 */}
+      // </Layout> */
   );
 };
 
