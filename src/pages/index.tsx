@@ -9,11 +9,6 @@ import Hero from '@/components/Hero';
 const Home: NextPage = () => {
   return (
       <Hero />
-
-      // {/* <Layout>
-      //   <ResumeSection />
-      //   {/* 他のセクションをここに追加 */}
-      // </Layout> */
   );
 };
 
