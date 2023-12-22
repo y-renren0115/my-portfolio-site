@@ -4,12 +4,12 @@ import Layout from '../components/Layout';
 import ResumeSection from '../components/ResumeSection';
 import '../styles/globals.css';
 // import Card from '@/components/Card';
-import Hero from '@/components/Hero';
+import Top from '@/components/Top';
 
-const Home: NextPage = () => {
+const TopPage: NextPage = () => {
   return (
-      <Hero />
+      <Top />
   );
 };
 
-export default Home;
+export default TopPage;
