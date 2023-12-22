@@ -1,4 +1,5 @@
 import Card from '../components/Card';
+import ResumeSection from './ResumeSection';
 
 const Works = () => {
   const cardsData = [
@@ -29,11 +30,14 @@ const Works = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-    {cardsData.map((card, index) => (
-      <Card key={index} title={card.title} description={card.description} />
-    ))}
-  </div>
+    <>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {cardsData.map((card, index) => (
+          <Card key={index} title={card.title} description={card.description} />
+        ))}
+      </div>
+      <ResumeSection />
+    </>
   );
 }
 

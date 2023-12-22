@@ -1,6 +1,6 @@
 import Card from '../components/Card';
 
-const Hero = () => {
+const Top = () => {
   const cardsData = [
     {
       title: 'Card Title 1',
@@ -25,4 +25,4 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default Top;
