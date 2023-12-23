@@ -10,14 +10,24 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const router = useRouter();
 
-  const handleNavigation = (path: string) => {
-    router.push(path);
+  const getBackgroundImage = () => {
+    const path = router.pathname;
+
+    if (path === '/') {
+      return "bg-homepage-image";
+    } else {
+      return "bg-background-image"
+    }
   };
+
+  const backgroundImageClass = getBackgroundImage();
+
+  debugger;
 
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow container mx-auto px-4 py-8">{children}</main>
+      <main className={`${backgroundImageClass} bg-cover bg-center bg-no-repeat flex-grow`}>{children}</main>
       <Footer />
     </div>
   );
