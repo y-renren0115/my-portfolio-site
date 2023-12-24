@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import '../styles/globals.css';
 import DescriptionIcon from '@mui/icons-material/Description';
 
