@@ -22,6 +22,9 @@ const config: Config = {
         sacramento: ["Sacramento", "cursive"],
         montserrat: ["Montserrat", "sans-serif"],
       },
+      whitespace: {
+        "pre-line": "pre-line",
+      },
     },
   },
   plugins: [],
