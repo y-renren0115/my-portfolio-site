@@ -1,5 +1,3 @@
-import Card from '../components/Card';
-import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@mui/material/Button';
 
@@ -13,7 +11,7 @@ const Top = () => {
         </div>
         <nav className="space-y-2 font-alice">
           <div className="flex items-center mb-8">
-            <span className="text-xl ml-2 text-left">Discover More About Me → </span>
+            <span className="text-xl ml-2 mr-11 text-left">Discover More About Me → </span>
             <Link href="/about">
               <Button variant="contained" color="primary" className="font-bold px-2 pt-4 mb-2 bg-white text-gray-800 rounded hover:bg-gray-100 cursor-pointer shadow">
                 About
@@ -21,7 +19,7 @@ const Top = () => {
             </Link>
           </div>
           <div className="flex items-center">
-            <span className="text-xl ml-2 pt-4 mb-8 text-left">Discover My Past Projects → </span>
+            <span className="text-xl ml-2 mr-9 mb-8 pt-4 text-left">Discover My Past Projects → </span>
             <Link href="/works">
               <Button variant="contained" color="primary" className="font-bold px-2 mb-4 bg-white text-gray-800 rounded hover:bg-gray-100 cursor-pointer shadow">
                 Works
@@ -29,7 +27,7 @@ const Top = () => {
             </Link>
           </div>
           <div className="flex items-center">
-            <span className="text-xl ml-2 pt-4 mb-8 text-left">Contact Me for Details Here → </span>
+            <span className="text-xl ml-2 mr-4 mb-8 pt-4 text-left">Contact Me for Details Here → </span>
             <Link href="/contact">
               <Button variant="contained" color="primary" className="font-bold px-2 mb-4 bg-white text-gray-800 rounded hover:bg-gray-100 cursor-pointer shadow">
                 Contact
