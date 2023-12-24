@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, CardWithLineBreaks } from '../components/Card';
 import Image from 'next/image';
 
-
 const About = () => {
   const personalInfo = {
     name: 'John Doe',
@@ -39,11 +38,11 @@ const About = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div className="flex flex-col my-8 ml-20 col-span-1">
+    <div className="grid grid-cols-1 mx-auto my-10 md:grid-cols-3 gap-4 font-alice">
+      <div className="flex flex-col ml-20 col-span-1">
         <div className="relative w-[400px] h-[400px] rounded-full overflow-hidden">
           <Image
-            src="/personIcon1.png"
+            src="/personalIcon.png"
             alt="プロフィール画像"
             layout="fill"
             objectFit="cover"
@@ -56,7 +55,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="my-8 ml-8 col-span-2">
+      <div className="ml-8 col-span-2 mr-[5px]">
         <div className="grid grid-cols-2 gap-y-16">
           {cardsData.map((card, index) => (
             <Card key={index} title={card.title} description={card.description} />

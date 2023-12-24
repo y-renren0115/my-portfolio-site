@@ -22,8 +22,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   const backgroundImageClass = getBackgroundImage();
 
-  debugger;
-
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
