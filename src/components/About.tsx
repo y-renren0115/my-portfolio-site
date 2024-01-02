@@ -4,16 +4,16 @@ import Image from 'next/image';
 
 const About = () => {
   const personalInfo = {
-    name: 'John Doe',
-    birthday: 'January 1, 1990',
-    hometown: 'New York',
-    hobbies: 'Photography and Traveling'
+    name: '吉澤 蓮',
+    birthday: '2000年1月15日',
+    hometown: '長野県',
+    hobbies: '旅行✈️、ドライブ🚕、お酒🍷、etc.'
   };
 
   const cardsData = [
     {
       title: 'Career Overview',
-      description: 'A brief summary of my professional journey and key milestones. Exploring the path that has shaped my career.'
+      description: '某大手プログラミング技術メンター ⇒ CRM/SFA自社SaaSサービス開発⇒ 【現在】SES業務管理自社SaaSサービス開発（22023/11月〜）'
     },
     {
       title: 'Skills',
