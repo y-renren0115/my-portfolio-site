@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardWithLineBreaks } from '../components/Card';
 import Image from 'next/image';
+import MultilineText from './MultilineText';
 
 const About = () => {
   const personalInfo = {
@@ -10,6 +11,7 @@ const About = () => {
     hobbies: '旅行✈️、ドライブ🚕、お酒🍷、etc.'
   };
 
+
   const cardsData = [
     {
       title: 'Career Overview',
@@ -17,15 +19,15 @@ const About = () => {
     },
     {
       title: 'Skills',
-      description: 'An overview of my technical and soft skills, showcasing my expertise and areas of specialization.'
+      description: `・データベース技術: MySQL/PostgreSQL/SQLServer/etc...\n・クラウド技術: AWS(EC2/Lambda/RDS/ELB/S3/IAM/etc...)`
     },
     {
       title: 'Programming Languages',
-      description: 'A list of programming languages I am proficient in, highlighting my experience and projects.'
+      description: 'HTML5/CSS3/bootstrap/TailwindCSS/Javascript\n/TypeScript/Vue.js/vuetify/React.js/Next.js/Ruby\n/Ruby on Rails/Java/Spring Boot/etc...'
     },
     {
       title: 'Tools I Use',
-      description: 'An insight into the various tools and technologies I utilize in my workflow to enhance productivity and efficiency.'
+      description: 'Git/SVN/GitHub/GitLab/Docker/IntelliJ IDEA/\nVisual Studio Code/Eclipse/Jenkins/Postman/\nMicrosoft Office/Google Apps/etc...',
     },
     {
       title: 'Personal Pitch',
@@ -48,7 +50,7 @@ const About = () => {
             objectFit="cover"
           />
         </div>
-        <div className="mt-4">
+        <div className="mt-10">
           <CardWithLineBreaks
             title={personalInfo.name}
             description={`Birthday: ${personalInfo.birthday}\n Hometown: ${personalInfo.hometown}\n Hobbies: ${personalInfo.hobbies}`}
