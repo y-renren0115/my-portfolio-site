@@ -2,6 +2,9 @@ import React from 'react';
 import { Card, CardWithLineBreaks } from '../components/Card';
 import Image from 'next/image';
 import MultilineText from './MultilineText';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faWineGlass } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
   const personalInfo = {
@@ -31,11 +34,23 @@ const About = () => {
     },
     {
       title: 'Personal Pitch',
-      description: 'My unique selling points and strengths. A personal narrative that defines who I am professionally.'
+      description: '2社の自社BtoB向けaaSサービス開発を通して獲得した技術スタック、リードエンジニアとしてマネジメントにも携わっていた経験が強みです。'
     },
     {
       title: 'Social Media',
-      description: 'Links to my social media profiles, offering a glimpse into my professional network and online presence.'
+      description: (
+        <div className="flex justify-center gap-4 mb-8">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="px-3">
+            <FontAwesomeIcon icon={faGithub} size="2x" />
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="px-3">
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          </a>
+          <a href="https://www.wantedly.com/users/your-username" target="_blank" rel="noopener noreferrer" className="px-3">
+            <FontAwesomeIcon icon={faWineGlass} size="2x" />
+          </a>
+        </div>
+      ),
     }
   ];
 
