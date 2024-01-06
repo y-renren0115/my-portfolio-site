@@ -1,57 +1,77 @@
-import React from 'react';
-import { Card, CardWithLineBreaks } from '../components/Card';
-import Image from 'next/image';
-import MultilineText from './MultilineText';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faWineGlass } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import { Card, CardWithLineBreaks } from "../components/Card";
+import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faWordpress,
+} from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
   const personalInfo = {
-    name: '吉澤 蓮',
-    birthday: '2000年1月15日',
-    hometown: '長野県',
-    hobbies: '旅行✈️、ドライブ🚕、お酒🍷、etc.'
+    name: "吉澤 蓮",
+    birthday: "2000年1月15日",
+    hometown: "長野県",
+    hobbies: "旅行、ドライブ、お酒、読書、etc...",
   };
-
 
   const cardsData = [
     {
-      title: 'Career Overview',
-      description: '某大手プログラミング技術メンター ⇒ CRM/SFA自社SaaSサービス開発⇒ 【現在】SES業務管理自社SaaSサービス開発（22023/11月〜）'
+      title: "Career Overview",
+      description:
+        "某大手プログラミング技術メンター ⇒ CRM/SFA自社SaaSサービス開発⇒ 【現在】SES業務管理自社SaaSサービス開発（22023/11月〜）",
     },
     {
-      title: 'Skills',
-      description: `・データベース技術: MySQL/PostgreSQL/SQLServer/etc...\n・クラウド技術: AWS(EC2/Lambda/RDS/ELB/S3/IAM/etc...)`
+      title: "Skills",
+      description: `・データベース技術: MySQL/PostgreSQL/SQLServer/etc...\n・クラウド技術: AWS(EC2/Lambda/RDS/ELB/S3/IAM/etc...)`,
     },
     {
-      title: 'Programming Languages',
-      description: 'HTML5/CSS3/bootstrap/TailwindCSS/Javascript\n/TypeScript/Vue.js/vuetify/React.js/Next.js/Ruby\n/Ruby on Rails/Java/Spring Boot/etc...'
+      title: "Programming Languages",
+      description:
+        "HTML5/CSS3/bootstrap/TailwindCSS/Javascript\n/TypeScript/Vue.js/vuetify/React.js/Next.js/Ruby\n/Ruby on Rails/Java/Spring Boot/etc...",
     },
     {
-      title: 'Tools I Use',
-      description: 'Git/SVN/GitHub/GitLab/Docker/IntelliJ IDEA/\nVisual Studio Code/Eclipse/Jenkins/Postman/\nMicrosoft Office/Google Apps/etc...',
+      title: "Tools I Use",
+      description:
+        "Git/SVN/GitHub/GitLab/Docker/IntelliJ IDEA/\nVisual Studio Code/Eclipse/Jenkins/Postman/\nMicrosoft Office/Google Apps/etc...",
     },
     {
-      title: 'Personal Pitch',
-      description: '2社の自社BtoB向けaaSサービス開発を通して獲得した技術スタック、リードエンジニアとしてマネジメントにも携わっていた経験が強みです。'
+      title: "Personal Pitch",
+      description:
+        "2社の自社BtoB向けaaSサービス開発を通して獲得した技術スタック、リードエンジニアとしてマネジメントにも携わっていた経験が強みです",
     },
     {
-      title: 'Social Media',
+      title: "Social Media",
       description: (
-        <div className="flex justify-center gap-4 mb-8">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="px-3">
+        <div className="flex justify-center gap-12 mt-6 mb-6">
+          <a
+            href="https://github.com/y-renren0115/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3"
+          >
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="px-3">
+          <a
+            href="https://www.linkedin.com/in/%E8%93%AE-%E5%90%89%E6%BE%A4-6089891b1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3"
+          >
             <FontAwesomeIcon icon={faLinkedin} size="2x" />
           </a>
-          <a href="https://www.wantedly.com/users/your-username" target="_blank" rel="noopener noreferrer" className="px-3">
-            <FontAwesomeIcon icon={faWineGlass} size="2x" />
+          <a
+            href="https://www.wantedly.com/id/Lotus0115"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3"
+          >
+            <FontAwesomeIcon icon={faWordpress} size="2x" />
           </a>
         </div>
       ),
-    }
+    },
   ];
 
   return (
@@ -75,12 +95,16 @@ const About = () => {
       <div className="ml-8 col-span-2 mr-[5px]">
         <div className="grid grid-cols-2 gap-y-16">
           {cardsData.map((card, index) => (
-            <Card key={index} title={card.title} description={card.description} />
+            <Card
+              key={index}
+              title={card.title}
+              description={card.description}
+            />
           ))}
         </div>
       </div>
-    </div >
+    </div>
   );
-}
+};
 
 export default About;

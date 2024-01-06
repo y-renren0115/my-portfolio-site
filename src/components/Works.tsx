@@ -1,31 +1,37 @@
-import { Card } from '../components/Card';
+import { Card } from "../components/Card";
 
 const Works = () => {
   const cardsData = [
     {
-      title: 'Project Management Expertise',
-      description: 'Managed various web development projects, ensuring timely delivery and adherence to quality standards. Skilled in Agile methodologies and team collaboration.'
+      title: "フロントエンド開発",
+      description:
+        "HTML5/CSS3/TailwindCSS/JavaScript/\nTypeScript/Vue.js/React.js/Next.js等を使用したSPA開発やレスポンシブでインタラクティブなWebインターフェースの構築経験",
     },
     {
-      title: 'Frontend Development Specialist',
-      description: 'Experienced in building responsive and interactive web interfaces using HTML5, CSS3, and JavaScript frameworks like React.js and Angular.'
+      title: "バックエンド開発",
+      description:
+        "Ruby/Ruby on Rails/Java/Spring BootなどのMVCアーキテクチャベースのバックエンド技術を使用した効率的かつセキュアでスケーラブルなバックエンドシステムの開発経験",
     },
     {
-      title: 'Backend Development Skills',
-      description: 'Proficient in server-side languages such as Node.js and Python, with a strong understanding of database technologies like SQL and NoSQL.'
+      title: "クラウドサービス連携",
+      description:
+        "EC2を使用したWebアプリケーショに最適で柔軟なサーバー環境の構築、S3を使用したデータストレージと配信の管理、Lambdaを使用したサーバーレス処理の開発経験",
     },
     {
-      title: 'Database Design & Management',
-      description: 'Expertise in designing robust database architectures and optimizing data storage and retrieval for high-performance web applications.'
+      title: "データベース管理",
+      description:
+        "MySQL、PostgreSQL、SQLServer等を使用した多様な機能要件に合わせたDB設計、リレーショナルデータベースの特性を活かした最適なデータ構造と性能を実現した経験",
     },
     {
-      title: 'API Development & Integration',
-      description: 'Developed custom APIs and integrated third-party APIs to enhance application functionality and user experience.'
+      title: "UI/UXデザイン構築",
+      description:
+        "FigmaやAIデザインツール活用した、インタラクティブなプロトタイプの作成および一貫性のあるデザインシステムを構築、多様なユーザーが使いやすいUIを意識した設計経験",
     },
     {
-      title: 'User Experience & Interface Design',
-      description: 'Focused on creating user-centered designs and improving web application usability through innovative UI solutions and UX best practices.'
-    }
+      title: "アジャイル開発プロセス",
+      description:
+        "5人の開発チームのプロジェクトリーダーとして、スクラム手法を採用して迅速なイテレーションと継続的なフィードバックを実施し、柔軟な要件変更に迅速に対応したプロジェクト経験",
+    },
   ];
 
   return (
@@ -38,6 +44,6 @@ const Works = () => {
       </div>
     </>
   );
-}
+};
 
 export default Works;
