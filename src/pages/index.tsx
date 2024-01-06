@@ -1,24 +1,12 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Layout from '../components/Layout';
-import ResumeSection from '../components/ResumeSection';
-import '../styles/globals.css';
+import Top from '@/components/Top';
 
-const Home: NextPage = () => {
+const TopPage: NextPage = () => {
   return (
-    <>
-      <Head>
-        <title>My Portfolio</title>
-        <meta name="description" content="Personal Portfolio Website" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <Layout>
-        <ResumeSection />
-        {/* 他のセクションをここに追加 */}
-      </Layout>
-    </>
+    <div>
+      <Top />
+    </div>
   );
 };
 
-export default Home;
+export default TopPage;

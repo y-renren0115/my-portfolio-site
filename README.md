@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 個人ポートフォリオサイト
 
-## Getting Started
+ポートフォリオサイトは、下記リンクからご覧頂けます。
 
-First, run the development server:
+- https://my-portfolio-site-pink-pi.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Web エンジニアとしての経歴
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **株式会社インフラトップ**（技術メンター）
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 業務内容: プログラミングスクール「DMMWebCamp」の技術メンターとしてエンジニアへの転職を目指す受講生様に Web 系技術やプログラミングスキルを教えたり、カリキュラムで使用する Web アプリケーションのプロトタイプ作成に携わっておりました。
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **使用技術**: HTML5/CSS3/Javascript/Ruby/Ruby on Rails/PostgreSQL/Git/etc...
 
-## Learn More
+  2.**ソフトブレーン株式会社**（Web エンジニア）
 
-To learn more about Next.js, take a look at the following resources:
+- **業務内容**: 顧客総合満足度 No.1 の CRM/SFA の e セールスマネージャー Remix Cloud のカスタマイズ・ アドオン開発、保守、運用業務など幅広い範囲の業務に携わっておりました。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **使用技術**: HTML5/CSS3/bootstrap/Javascript/Vue.js/vuetify/Java/Spring Boot/SQLServer/PostgreSQL/AWS/Eclipse/etc...
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  3.**株式会社セイル**（Web エンジニア）
 
-## Deploy on Vercel
+- **業務内容**: SES 営業をサポートするための SaaS サービス「SmartSES」の開発メンバーとしてフロントエンド・バックエンド開発に携わっております。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **使用技術**: TailwindCSS/TypeScript/React.js/Next.js/Java/Spring Boot/MySQL/AWS/etx...
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 技術スタック&取得資格
+
+1. Frontend
+
+- HTML5/CSS3/bootstrap/TailwindCSS/Javascript/TypeScript/Vue.js/vuetify/React.js/Next.js
+
+  2.Backend
+
+- Ruby/Ruby on Rails/Java/Spring Boot
+
+  3.DB
+
+- PostgreSQL/MySQL/SQLServer
+
+  4.Infra&Tools
+
+- AWS/Eclipse/Vscode/Postman
+
+  5.保有資格
+
+- AWS Certified Solutions Architect – Associate
+- AWS Certified Cloud Practitioner
+- Oracle Certified Java Programmer, Gold SE 11
+- Oracle Certified Java Programmer, Silver SE 11
+- 基本情報技術者試験
+
+## サイト環境情報
+
+- next: v14.0.3
+- react": ^18
+- node: v21.3.0
+- デプロイ: vercel
